@@ -1,0 +1,1 @@
+﻿Set-NetIPInterface -Interfacealias ethernet -Dhcp Enabled

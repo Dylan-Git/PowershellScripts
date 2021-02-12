@@ -1,0 +1,7 @@
+while($true){
+$User = read-host -Prompt "username"
+Get-ADUser -Filter {name -like $User} | Set-ADUser -Replace @{msExchHideFromAddressLists=$true}
+
+Get-ADUser -Filter {name -like $User} -Properties name,msExchHideFromAddressLists | select name,msExchHideFromAddressLists
+
+}

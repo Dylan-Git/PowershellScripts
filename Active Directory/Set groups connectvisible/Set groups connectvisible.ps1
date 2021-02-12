@@ -1,0 +1,1 @@
+Get-adgroup  -filter * -searchbase "OU=CLIENT_GROUPS,DC=cml,DC=local" | Set-ADGroup -replace @{connectVisible=$True}

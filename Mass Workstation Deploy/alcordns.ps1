@@ -1,0 +1,1 @@
+﻿Set-DnsClientServerAddress -InterfaceAlias ethernet -ServerAddresses 10.5.23.170,8.8.8.8
